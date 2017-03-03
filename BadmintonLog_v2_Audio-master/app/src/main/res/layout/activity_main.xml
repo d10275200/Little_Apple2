@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="nctu.nol.badmintonlogprogram.MainActivity" >
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="0sp"
+		android:layout_weight="1"
+		android:orientation="vertical" >
+
+		<!-- Headset Connect Check -->
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:orientation="horizontal" >
+
+			<Button
+				android:id="@+id/bt_micconnect"
+				android:layout_width="100sp"
+				android:layout_height="100sp"
+				android:layout_marginRight="150px"
+				android:background="@drawable/headset_disconnect" >
+			</Button>
+			<Button
+				android:id="@+id/bt_koalaconnect"
+				android:layout_width="100sp"
+				android:layout_height="100sp"
+				android:background="@drawable/koala_disconnect"
+				android:textSize="25sp">
+			</Button>
+		</LinearLayout>
+
+	</LinearLayout>
+
+
+	<LinearLayout
+		android:id="@+id/fragment_container"
+		android:layout_width="fill_parent"
+		android:layout_height="0sp"
+		android:layout_weight="3"
+		android:orientation="vertical" >
+	</LinearLayout>
+
+</LinearLayout>

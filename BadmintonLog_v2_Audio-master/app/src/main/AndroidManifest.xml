@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="nctu.nol.badmintonlogprogram"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.BLUETOOTH"></uses-permission>
+	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN"></uses-permission>
+	
+	<!-- Audio Record -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    
+    
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:name="nctu.nol.account.VolleyController"
+        android:supportsRtl="true"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="nctu.nol.account.LoginPage"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>!-->
+        </activity>
+        <activity
+            android:name=".KoalaScan"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".DataListPage"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ShowTrainingData"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".StrokeListPage"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ShowTestingData"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="nctu.nol.account.AgreementPage" />
+        <activity android:name="nctu.nol.account.RegisterPage" />
+        <activity
+            android:name="nctu.nol.account.FakeLogin"
+            android:label="@string/title_activity_fake_login"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <service android:name="cc.nctu1210.api.koala6x.KoalaService" android:enabled="true"/>
+        <service android:name="nctu.nol.bt.devices.SoundWaveService" android:enabled="true"/>
+        <service
+            android:name="nctu.nol.account.NetworkCheckService"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
