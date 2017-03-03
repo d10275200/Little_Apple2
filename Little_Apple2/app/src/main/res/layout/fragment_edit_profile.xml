@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="28dp" />
+
+    <FrameLayout
+        android:id="@+id/fragment_password"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="名字："
+                android:textSize = "20dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/name_data" />
+
+            <TextView
+                android:id="@+id/height"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="身高："
+                android:textSize = "20dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/height_data" />
+
+            <TextView
+                android:id="@+id/weight"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="體重："
+                android:textSize = "20dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/weight_data"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="年齡："
+                android:textSize = "20dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/age_data"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Save"
+                android:id="@+id/send_profile" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
