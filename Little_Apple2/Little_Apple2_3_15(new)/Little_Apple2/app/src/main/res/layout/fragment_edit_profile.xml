@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="28dp" />
+
+    <FrameLayout
+        android:id="@+id/fragment_password"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_weight="0.09">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="名字："
+                    android:textSize = "25dp"/>
+
+                <EditText
+                    android:layout_width="121dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:hint="11"
+                    android:textSize = "25dp"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/name_data" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_weight="0.10">
+
+                <TextView
+                    android:id="@+id/height"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="身高："
+                    android:textSize = "25dp"/>
+
+                <EditText
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="121dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:hint="11"
+                    android:textSize = "25dp"
+                    android:id="@+id/height_data" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_weight="0.09">
+
+                <TextView
+                    android:id="@+id/weight"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="體重："
+                    android:textSize = "25dp"/>
+
+                <EditText
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="121dp"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:hint="11"
+                    android:textSize = "25dp"
+                    android:id="@+id/weight_data"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_weight="0.12">
+
+                <TextView
+                    android:id="@+id/age"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="年齡："
+                    android:textSize = "25dp" />
+
+                <EditText
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:hint="11"
+                    android:textSize = "25dp"
+                    android:id="@+id/age_data"
+                    android:layout_height="wrap_content"
+                    android:layout_width="121dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_weight="0.29">
+                <TextView
+                    android:id="@+id/sex"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="性別："
+                    android:textSize = "25dp" />
+
+                <RadioGroup
+                    android:id="@+id/radiogroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:text="男"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/man_radio"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="女"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/woman_radio"
+                        android:layout_weight="1" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/sp_model_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:layout_centerInParent="true"
+                android:spinnerMode="dialog"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin" />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Save"
+                android:id="@+id/Save_Profile" />
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="61dp">
+
+            <Space
+                android:layout_width="34dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="54dp"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.45" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:background="@drawable/calendar"
+                    android:id="@+id/DateButton" />
+            </LinearLayout>
+
+            <TextView
+                android:text="Date_View_His"
+                android:textSize="40dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/Date_View_His" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="198dp">
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:text="長球"
+                    android:layout_width="126dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:id="@+id/textView30" />
+
+                <TextView
+                    android:text="切球"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:id="@+id/textView25"
+                    android:layout_width="126dp" />
+
+                <TextView
+                    android:text="殺球"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:id="@+id/textView24" />
+
+                <TextView
+                    android:hint="@string/badminton_name5"
+                    android:textSize="30dp"
+                    android:background="@drawable/aaa"
+                    android:gravity="center"
+                    android:id="@+id/drop_ball_his"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_width="126dp"
+                    android:layout_height="71dp" />
+
+                <TextView
+                    android:hint="@string/badminton_name6"
+                    android:textSize="30dp"
+                    android:background="@drawable/aaa"
+                    android:gravity="center"
+                    android:id="@+id/smash_ball_his"
+                    android:layout_row="1"
+                    android:layout_column="2"
+                    android:layout_height="71dp"
+                    android:layout_width="108dp" />
+
+                <TextView
+                    android:hint="@string/badminton_name4"
+                    android:textSize="30dp"
+                    android:background="@drawable/aaa"
+                    android:gravity="center"
+                    android:id="@+id/long_ball_his"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:layout_width="126dp"
+                    android:layout_height="71dp" />
+
+                <TextView
+                    android:hint="@string/badminton_name1"
+                    android:textSize="30dp"
+                    android:background="@drawable/aaa"
+                    android:gravity="center"
+                    android:layout_width="126dp"
+                    android:layout_height="71dp"
+                    android:id="@+id/netplay_ball_his"
+                    android:layout_row="3"
+                    android:layout_column="0" />
+
+                <TextView
+                    android:text="小球"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView34"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:layout_width="126dp" />
+
+                <TextView
+                    android:text="挑球"
+                    android:gravity="center"
+                    android:layout_width="126dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView35" />
+
+                <TextView
+                    android:text="平球"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView37"
+                    android:layout_width="110dp" />
+
+                <TextView
+                    android:hint="@string/badminton_name2"
+                    android:textSize="30dp"
+                    android:background="@drawable/aaa"
+                    android:gravity="center"
+                    android:id="@+id/lob_ball_his"
+                    android:layout_row="3"
+                    android:layout_column="1"
+                    android:layout_width="126dp"
+                    android:layout_height="71dp" />
+
+                <TextView
+                    android:hint="@string/badminton_name3"
+                    android:textSize="30dp"
+                    android:background="@drawable/aaa"
+                    android:gravity="center"
+                    android:layout_height="71dp"
+                    android:id="@+id/drive_ball_his"
+                    android:layout_row="3"
+                    android:layout_column="2"
+                    android:layout_width="108dp" />
+
+            </GridLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:text ="Date" />
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:text = "Time"/>
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:text = "Upload"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/history_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
